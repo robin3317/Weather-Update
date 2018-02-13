@@ -5,3 +5,14 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+body {
+  background: none;
+}
+.container {
+  text-align: center;
+  margin-top: 100px;
+  width: 425px;
+}
+label {
+  font-size: 18px;
+}
