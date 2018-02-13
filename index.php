@@ -3,7 +3,7 @@
   $error = "";
   $result = "";
 
-  if($_GET["city"]) {
+  if(array_key_exists('city', $_GET)) {
     //for pringing in alert with space
     $cityName = $_GET["city"];
 
@@ -55,7 +55,9 @@
 
     <!--html part-->
     <div class="container">
-      <h1>What's The Weather ?</h1>
+      <!-- <h4>What's The Weather</h4>
+      <h1>What's The Weather ?</h1> -->
+      <img src="final_logo.PNG" alt="logo">
       <!--input city-->
       <form>
         <div class="form-group">

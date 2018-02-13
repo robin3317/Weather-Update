@@ -20,3 +20,12 @@ label {
 #result {
   margin-top: 15px;
 }
+
+h4 {
+  color: greenyellow;
+}
+
+img {
+  width: 420px;
+  margin-left: -10px;
+}
