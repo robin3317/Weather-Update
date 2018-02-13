@@ -1,3 +1,13 @@
+<?php
+  if($_GET["city"]) {
+    $forecastPage = file_get_contents("https://www.weather-forecast.com/locations/London/forecasts/latest");
+    $forecastArray = explode('1&ndash;3 days)</span><p class="b-forecast__table-description-content"><span class="phrase">', $forecastPage);
+    $forecastArray2 = explode('</span></p></td>', $forecastArray[1]);
+    $result = $forecastArray2[0];
+  }
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -22,10 +32,19 @@
     <form>
       <div class="form-group">
         <label for="cityName">Enter The Name Of A City</label>
-        <input type="text" class="form-control" id="cityName" placeholder="Eg. London">
+        <input type="text" class="form-control" name="city" id="cityName" placeholder="Eg. London">
       </div>
       <button type="submit" class="btn btn-primary">Show</button>
     </form>
+    <div id="result">
+      <?php
+        if ($result) {
+          echo '<div class="alert alert-success" role="alert">
+          '.$result.'
+        </div>';
+        }
+      ?>
+    </div>
   </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
