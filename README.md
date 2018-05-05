@@ -1,6 +1,8 @@
 # What's The Weather 
 <img src="final_logo.png" width="25%" height="25%"/>
 
+### See this project as a video : [YouTube](https://youtu.be/kal627o08jI)
+
 #### A Weather app where you can know the current weather update of any city in the world. 
 
 <img src="image1.PNG" width="55%" height="45%"/>
